@@ -1,0 +1,104 @@
+.about,
+.about * {
+  box-sizing: border-box;
+}
+.about {
+  background: #000000;
+  border-radius: 12px;
+  height: 1037px;
+  position: relative;
+  overflow: hidden;
+}
+.rudrakshi-moudgil {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 117px;
+  top: 104px;
+  width: 365px;
+  height: 49px;
+}
+.homepage {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 944px;
+  top: 129px;
+}
+.about2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1083px;
+  top: 131px;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 1185px;
+  top: 116px;
+}
+.contact-us-span {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact-us-span2 {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.work-experience {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 574px);
+  top: 322px;
+}
+.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 116px;
+  top: 470px;
+  width: 2495px;
+  height: 307px;
+}
+.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time-span {
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time-span2 {
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time-span3 {
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 482px;
+  top: 949px;
+}

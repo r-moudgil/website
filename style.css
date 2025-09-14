@@ -1,0 +1,111 @@
+.landing-page,
+.landing-page * {
+  box-sizing: border-box;
+}
+.landing-page {
+  background: #000000;
+  border-radius: 12px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.rudrakshi-moudgil {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 148px;
+  top: 104px;
+  width: 365px;
+  height: 49px;
+}
+.homepage {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 944px;
+  top: 129px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1083px;
+  top: 131px;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 1185px;
+  top: 116px;
+}
+.contact-us-span {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact-us-span2 {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.let-s-impress-our-professor {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 428px;
+}
+.i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 341px;
+  top: 537px;
+}
+.rectangle-1 {
+  border-radius: 0px;
+  width: 207px;
+  height: 64.9px;
+  position: absolute;
+  left: 657.01px;
+  top: 728.02px;
+  transform: translate(-0.04px, 0.01px);
+  overflow: visible;
+}
+.get-started {
+  color: #000000;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 23px);
+  top: 743px;
+}
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 482px;
+  top: 949px;
+}

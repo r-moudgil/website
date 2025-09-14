@@ -1,0 +1,92 @@
+.contact-us,
+.contact-us * {
+  box-sizing: border-box;
+}
+.contact-us {
+  background: #000000;
+  border-radius: 12px;
+  height: 1037px;
+  position: relative;
+  overflow: hidden;
+}
+.rudrakshi-moudgil {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 117px;
+  top: 104px;
+  width: 365px;
+  height: 49px;
+}
+.homepage {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 944px;
+  top: 129px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1083px;
+  top: 131px;
+}
+.contact-us2 {
+  color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 1185px;
+  top: 116px;
+}
+.contact-us-2-span {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact-us-2-span2 {
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.contact-us3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 574px);
+  top: 322px;
+}
+.email-rmoudgil-umd-edu-phone-240-389-2157 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 146px;
+  top: 456px;
+  width: 2495px;
+  height: 307px;
+}
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "TaiHeritagePro-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 482px;
+  top: 949px;
+}
