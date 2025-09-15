@@ -193,3 +193,87 @@
   font-weight: 400;
   position: relative;
 }
+/* ===== Global layout fixes (append at end of each CSS file) ===== */
+
+/* Let pages grow naturally and center their content */
+.landing-page, .about, .contact-us {
+  min-height: 100vh !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 96px 16px 56px !important; /* room for navbar + footer */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+/* Keep navbar pinned and full-width */
+.main-menu { position: sticky; top: 0; width: 100%; z-index: 1030; }
+
+/* ---------- Home (index.html) ---------- */
+/* Center titles/buttons and let them flow */
+.let-s-impress-our-professor,
+.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
+.get-started,
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  position: static !important;
+  margin: 12px auto !important;
+  text-align: center !important;
+  max-width: 1000px !important;
+  padding: 0 8px !important;
+}
+/* Hide decorative rectangle exported from Figma if it overlaps */
+.rectangle-1 { display: none !important; }
+
+/* ---------- About (about.html) ---------- */
+.work-experience {
+  position: static !important;
+  margin: 24px auto 8px !important;
+  text-align: center !important;
+  max-width: 1000px !important;
+  padding: 0 8px !important;
+}
+/* Target the long “coforge-…” block without copying the whole class name */
+[class^="coforge-"] {
+  position: static !important;
+  width: auto !important;
+  max-width: 1100px !important;
+  margin: 8px auto !important;
+  text-align: left !important;
+  line-height: 1.6 !important;
+  padding: 0 12px !important;
+}
+
+/* ---------- Contact (contact.html) ---------- */
+.contact-us3 {
+  position: static !important;
+  text-align: center !important;
+  margin: 24px auto 8px !important;
+  max-width: 1000px !important;
+  padding: 0 8px !important;
+}
+[class^="email-"] {
+  position: static !important;
+  width: auto !important;
+  max-width: 900px !important;
+  margin: 8px auto !important;
+  text-align: center !important;
+  line-height: 1.6 !important;
+  padding: 0 12px !important;
+}
+
+/* ---------- Footer (all pages) ---------- */
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  position: static !important;
+  margin: 24px auto 0 !important;
+  text-align: center !important;
+  padding: 0 8px !important;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 768px) {
+  .let-s-impress-our-professor,
+  .work-experience,
+  .contact-us3 { font-size: 40px !important; }
+  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge { font-size: 18px !important; }
+}
