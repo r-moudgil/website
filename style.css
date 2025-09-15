@@ -5,9 +5,20 @@
 .landing-page {
   background: #000000;
   border-radius: 12px;
-  height: 1024px;
+  height: 1072px;
   position: relative;
   overflow: hidden;
+}
+.frame-1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 138px;
+  top: 94px;
 }
 .rudrakshi-moudgil {
   color: #ffffff;
@@ -15,11 +26,18 @@
   font-family: "TaiHeritagePro-Bold", sans-serif;
   font-size: 40px;
   font-weight: 700;
+  position: relative;
+}
+.frame-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 148px;
-  top: 104px;
-  width: 365px;
-  height: 49px;
+  left: 934px;
+  top: 119px;
 }
 .homepage {
   color: #ffffff;
@@ -27,9 +45,18 @@
   font-family: "TaiHeritagePro-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  position: relative;
+}
+.frame-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 944px;
-  top: 129px;
+  left: 1073px;
+  top: 121px;
 }
 .about {
   color: #ffffff;
@@ -37,16 +64,23 @@
   font-family: "TaiHeritagePro-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  position: relative;
+}
+.frame-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 1083px;
-  top: 131px;
+  left: 1175px;
+  top: 106px;
 }
 .contact-us {
   color: #ffffff;
   text-align: left;
-  position: absolute;
-  left: 1185px;
-  top: 116px;
+  position: relative;
 }
 .contact-us-span {
   font-family: "TaiHeritagePro-Regular", sans-serif;
@@ -58,16 +92,47 @@
   font-size: 32px;
   font-weight: 400;
 }
-.let-s-impress-our-professor {
+.frame-10 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 317px;
+  position: absolute;
+  left: 551px;
+  top: 393px;
+}
+.frame-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.meet-me {
   color: #ffffff;
   text-align: left;
   font-family: "TaiHeritagePro-Bold", sans-serif;
   font-size: 64px;
   font-weight: 700;
+  position: relative;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 50%;
-  translate: -50%;
-  top: 428px;
+  left: 339px;
+  top: 583px;
 }
 .i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
   color: #ffffff;
@@ -75,19 +140,31 @@
   font-family: "TaiHeritagePro-Bold", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  position: absolute;
-  left: 341px;
-  top: 537px;
+  position: relative;
 }
-.rectangle-1 {
-  border-radius: 0px;
-  width: 207px;
-  height: 64.9px;
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 227.05px;
+  height: auto;
   position: absolute;
-  left: 657.01px;
-  top: 728.02px;
-  transform: translate(-0.04px, 0.01px);
+  left: 622px;
+  top: 760px;
   overflow: visible;
+}
+.frame-7 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 663px;
+  top: 768px;
 }
 .get-started {
   color: #000000;
@@ -95,9 +172,18 @@
   font-family: "TaiHeritagePro-Bold", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  position: relative;
+}
+.frame-9 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: calc(50% - 23px);
-  top: 743px;
+  left: 472px;
+  top: 939px;
 }
 .rudrakshi-moudgil-university-of-maryland-spring-2025 {
   color: #ffffff;
@@ -105,66 +191,5 @@
   font-family: "TaiHeritagePro-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  position: absolute;
-  left: 482px;
-  top: 949px;
-}
-/* ===== Alignment + responsiveness fix (drop at end of file) ===== */
-
-/* Let the page grow naturally and stack content */
-.landing-page, .about, .contact-us {
-  min-height: 100vh;
-  height: auto;
-  overflow: visible;
-  padding-top: 24px;
-  padding-bottom: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Keep navbar anchored */
-.main-menu { width: 100%; position: sticky; top: 0; z-index: 1030; }
-
-/* Center big titles and text; remove absolute positioning from hero/sections */
-.let-s-impress-our-professor,
-.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
-.work-experience,
-.contact-us3,
-.email-rmoudgil-umd-edu-phone-240-389-2157,
-.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time {
-  position: static !important;
-  margin: 12px auto;
-  text-align: center;
-  max-width: 1100px;
-  padding: 0 16px;
-}
-
-/* Make footer line centered and not absolutely placed */
-.rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  position: static !important;
-  margin: 24px auto 0;
-  text-align: center;
-}
-
-/* Hide the exported rectangle "button" and style the text as a button */
-.rectangle-1 { display: none !important; }
-.get-started {
-  position: static !important;
-  display: inline-block;
-  margin: 8px auto 0;
-  padding: 12px 24px;
-  background: #ffffff;
-  color: #000000;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-/* Tweak fonts on small screens */
-@media (max-width: 768px) {
-  .let-s-impress-our-professor { font-size: 40px !important; }
-  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge { font-size: 18px !important; }
-  .work-experience, .contact-us3 { font-size: 40px !important; }
+  position: relative;
 }
