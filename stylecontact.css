@@ -4,8 +4,7 @@
 }
 .contact-us {
   background: #000000;
-  border-radius: 12px;
-  height: 1037px;
+  height: 1072px;
   position: relative;
   overflow: hidden;
 }
@@ -65,7 +64,7 @@
   font-size: 64px;
   font-weight: 700;
   position: absolute;
-  left: calc(50% - 574px);
+  left: calc(50% - 545px);
   top: 322px;
 }
 .email-rmoudgil-umd-edu-phone-240-389-2157 {
@@ -75,9 +74,9 @@
   font-size: 32px;
   font-weight: 700;
   position: absolute;
-  left: 146px;
-  top: 456px;
-  width: 2495px;
+  left: 192px;
+  top: 494px;
+  width: 863px;
   height: 307px;
 }
 .rudrakshi-moudgil-university-of-maryland-spring-2025 {
@@ -89,83 +88,4 @@
   position: absolute;
   left: 482px;
   top: 949px;
-}
-/* ===== LAYOUT & FOOTER FIX ===== */
-.landing-page, .about, .contact-us {
-  min-height: 100vh !important;
-  height: auto !important;
-  overflow: visible !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 16px !important;
-  padding: 96px 16px 32px !important; /* leaves room for navbar */
-}
-
-/* Footer sits at the bottom of the viewport/content */
-.rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  position: static !important;
-  width: 100% !important;
-  margin-top: auto !important;
-  text-align: center !important;
-  padding: 8px 12px !important;
-}
-
-/* ===== HOMEPAGE HERO (index) ===== */
-.let-s-impress-our-professor,
-.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
-.get-started {
-  position: static !important;
-  text-align: center !important;
-  margin: 8px auto !important;
-  max-width: 1000px !important;
-  padding: 0 12px !important;
-}
-.rectangle-1 { display: none !important; } /* decorative box from Figma */
-
-/* ===== ABOUT PAGE TEXT (readable + centered) ===== */
-/* The plugin generated very long class names; catch them generically: */
-[class^="coforge-"], [class*=" coforge-"],
-[class^="-leader-"], [class*=" -leader-"],
-[class*="software-engineer"], [class*="team-"], [class*="british-airways"],
-[class*="resolution-time"], [class*="customer-satisfaction"] {
-  position: static !important;
-  width: 100% !important;
-  max-width: 1100px !important;
-  margin: 8px auto !important;
-  text-align: left !important;
-  font-size: 18px !important;
-  line-height: 1.6 !important;
-  color: #ffffff !important;
-}
-
-.work-experience {
-  position: static !important;
-  margin: 16px auto 8px !important;
-  text-align: center !important;
-  max-width: 1000px !important;
-  padding: 0 12px !important;
-}
-
-/* ===== CONTACT PAGE TEXT ===== */
-[class^="email-"], [class*=" email-"] {
-  position: static !important;
-  width: 100% !important;
-  max-width: 900px !important;
-  margin: 8px auto !important;
-  text-align: center !important;
-  font-size: 20px !important;
-  line-height: 1.6 !important;
-  color: #ffffff !important;
-}
-
-/* ===== RESPONSIVE SIZING ===== */
-@media (max-width: 768px) {
-  .let-s-impress-our-professor,
-  .work-experience,
-  .contact-us3 { font-size: 40px !important; }
-
-  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
-    font-size: 18px !important;
-  }
 }
