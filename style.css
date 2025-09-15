@@ -109,3 +109,62 @@
   left: 482px;
   top: 949px;
 }
+/* ===== Alignment + responsiveness fix (drop at end of file) ===== */
+
+/* Let the page grow naturally and stack content */
+.landing-page, .about, .contact-us {
+  min-height: 100vh;
+  height: auto;
+  overflow: visible;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Keep navbar anchored */
+.main-menu { width: 100%; position: sticky; top: 0; z-index: 1030; }
+
+/* Center big titles and text; remove absolute positioning from hero/sections */
+.let-s-impress-our-professor,
+.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
+.work-experience,
+.contact-us3,
+.email-rmoudgil-umd-edu-phone-240-389-2157,
+.coforge-noida-up-india-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-elevated-customer-satisfaction-score-from-8-0-to-9-3-within-4-months-by-implementing-operational-strategies-like-fortnightly-communications-setting-up-technical-training-for-the-team-that-enhanced-efficiency-and-turnaround-time {
+  position: static !important;
+  margin: 12px auto;
+  text-align: center;
+  max-width: 1100px;
+  padding: 0 16px;
+}
+
+/* Make footer line centered and not absolutely placed */
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  position: static !important;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+/* Hide the exported rectangle "button" and style the text as a button */
+.rectangle-1 { display: none !important; }
+.get-started {
+  position: static !important;
+  display: inline-block;
+  margin: 8px auto 0;
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Tweak fonts on small screens */
+@media (max-width: 768px) {
+  .let-s-impress-our-professor { font-size: 40px !important; }
+  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge { font-size: 18px !important; }
+  .work-experience, .contact-us3 { font-size: 40px !important; }
+}
