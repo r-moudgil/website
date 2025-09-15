@@ -1,91 +1,90 @@
-.contact-us,
-.contact-us * {
-  box-sizing: border-box;
-}
+/* ============ Contact page (match Figma) ============ */
+
+/* Page base */
+html, body { height: 100%; }
+body { margin: 0; }
+
 .contact-us {
-  background: #000000;
-  height: 1072px;
-  position: relative;
-  overflow: hidden;
+  /* full-height page that lets footer sit at the bottom */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* maroon background with vertical black stripes */
+  background:
+    repeating-linear-gradient(
+      to right,
+      #330707 0px,            /* maroon */
+      #330707 80px,           /* maroon width */
+      #000000 80px,           /* black stripe start */
+      #000000 105px           /* black stripe width (~25px) */
+    );
+  color: #f5efe7;             /* warm off-white like the mock */
+  font-family: "Georgia", "Times New Roman", Times, serif;
 }
-.rudrakshi-moudgil {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 40px;
+
+/* ----- NAVBAR (transparent, text on top of stripes) ----- */
+.navbar.bg-dark { background: transparent !important; box-shadow: none; }
+.navbar { padding-top: 28px; padding-bottom: 0; }
+.navbar-brand {
+  font-size: 28px;
   font-weight: 700;
-  position: absolute;
-  left: 117px;
-  top: 104px;
-  width: 365px;
-  height: 49px;
+  color: #f5efe7 !important;
+  letter-spacing: 0.3px;
 }
-.homepage {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 944px;
-  top: 129px;
+.navbar-nav { gap: 28px; }
+.navbar-nav .nav-link {
+  color: #e8dacd !important;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  padding: 0 !important;
+  opacity: 0.9;
 }
-.about {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 1083px;
-  top: 131px;
-}
-.contact-us2 {
-  color: #ffffff;
-  text-align: left;
-  position: absolute;
-  left: 1185px;
-  top: 116px;
-}
-.contact-us-2-span {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.contact-us-2-span2 {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { opacity: 1; color: #ffffff !important; }
+
+/* ----- MAIN HEADING (“Contact Us”) ----- */
 .contact-us3 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 64px;
+  /* left alignment and “down” the page like the mock */
+  align-self: flex-start;
+  margin-left: clamp(24px, 8vw, 96px);
+  margin-top: clamp(24px, 18vh, 180px);
+  margin-bottom: 12px;
+
+  font-size: clamp(48px, 9vw, 86px);
   font-weight: 700;
-  position: absolute;
-  left: calc(50% - 545px);
-  top: 322px;
+  line-height: 1.1;
+  color: #f5efe7;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.45);
 }
+
+/* ----- EMAIL + PHONE block ----- */
 .email-rmoudgil-umd-edu-phone-240-389-2157 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  position: absolute;
-  left: 192px;
-  top: 494px;
-  width: 863px;
-  height: 307px;
+  align-self: flex-start;
+  margin-left: clamp(24px, 8vw, 96px);
+
+  font-size: clamp(18px, 2.2vw, 28px);
+  font-weight: 600;
+  line-height: 1.6;
+  color: #f5efe7;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.35);
 }
+
+/* ----- FOOTER (centered at the bottom) ----- */
 .rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 482px;
-  top: 949px;
+  margin-top: auto;               /* pushes footer to the bottom */
+  text-align: center;
+  padding: 10px 16px 14px;
+  font-size: 14px;
+  color: #f0e6db;
+  opacity: 0.9;
+}
+
+/* ----- Small screens tune-up ----- */
+@media (max-width: 768px) {
+  .navbar { padding-top: 16px; }
+  .navbar-brand { font-size: 22px; }
+  .navbar-nav { gap: 18px; }
+
+  .contact-us3 { margin-top: 14vh; }
 }
