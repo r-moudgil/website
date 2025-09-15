@@ -1,163 +1,116 @@
-.about,
-.about * {
-  box-sizing: border-box;
-}
-.about {
-  background: #000000;
-  border-radius: 12px;
-  height: 1072px;
-  position: relative;
-  overflow: hidden;
-}
-.frame-11 {
-  padding: 10px;
+/* ================== ABOUT PAGE — match Figma ================== */
+html, body { height: 100%; }
+body { margin: 0; }
+
+.about{
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 107px;
-  top: 94px;
+  flex-direction: column;
+  color: #f6efe6;                               /* warm off-white */
+  font-family: "Georgia","Times New Roman",Times,serif;
+
+  /* maroon bg with vertical black stripes (like your mock) */
+  background:#000;
 }
-.rudrakshi-moudgil {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 40px;
+
+/* -------- NAVBAR (transparent over stripes) -------- */
+.main-menu { width: 100%; }
+.navbar.bg-dark { background: transparent !important; box-shadow: none; }
+.navbar { padding-top: 28px; padding-bottom: 0; }
+.navbar-brand{
+  font-size: clamp(22px, 2.6vw, 34px);
   font-weight: 700;
-  position: relative;
+  color: #f6efe6 !important;
+  letter-spacing: .3px;
 }
-.frame-12 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 934px;
-  top: 119px;
+.navbar-nav{ gap: 28px; }
+.navbar-nav .nav-link{
+  color: #e8dacd !important;
+  font-size: clamp(13px, 1.2vw, 16px);
+  letter-spacing: .2px;
+  padding: 0 !important;
+  opacity: .95;
 }
-.homepage {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-}
-.frame-13 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 1073px;
-  top: 121px;
-}
-.about2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-}
-.frame-14 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 1175px;
-  top: 106px;
-}
-.contact-us {
-  color: #ffffff;
-  text-align: left;
-  position: relative;
-}
-.contact-us-span {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.contact-us-span2 {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-}
-.frame-15 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 136px;
-  top: 312px;
-}
-.work-experience {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 64px;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active{ color: #fff !important; opacity: 1; }
+
+/* -------- PAGE TITLE -------- */
+.work-experience{
+  align-self: flex-start;
+  margin-left: clamp(24px, 8vw, 96px);
+  margin-top: clamp(24px, 16vh, 180px);
+  margin-bottom: 12px;
+
+  font-size: clamp(48px, 9vw, 92px);           /* big headline */
   font-weight: 700;
-  position: relative;
+  line-height: 1.1;
+  text-shadow: 0 2px 0 rgba(0,0,0,.45);
 }
-.frame-16 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 138px;
-  top: 484px;
+
+/* -------- CONTENT BLOCK (company, roles, bullets) -------- */
+.frame-16{
+  align-self: flex-start;
+  margin-left: clamp(24px, 8vw, 96px);
 }
-.coforge-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting {
-  color: #ffffff;
-  text-align: left;
-  position: relative;
+
+.frame-16 > div{
+  max-width: 1100px;
+  color: #f6efe6;
 }
-.coforge-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-span {
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 32px;
+
+/* make each nested span a block so they stack nicely */
+.frame-16 > div > span > span{ display: block; }
+
+/* 1) Company name ("Coforge") */
+.frame-16 > div > span > span:nth-of-type(1){
+  font-size: clamp(20px, 2.4vw, 32px);
   font-weight: 700;
+  margin-top: 6px;
 }
-.coforge-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-span2 {
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 16px;
+
+/* 2) Role + dates ("Software Engineer June 2021 – July 2024") */
+.frame-16 > div > span > span:nth-of-type(2){
+  font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
+  margin: 6px 0 6px;
 }
-.coforge-software-engineer-june-2021-july-2024-developed-and-maintained-production-grade-code-across-multiple-projects-adhering-to-sdlc-best-practices-and-achieving-a-zero-defect-run-rate-in-deployed-releases-collaborated-with-clients-to-customize-ba-s-british-airways-website-using-hp-team-site-aligning-deliverables-with-evolving-requirements-and-enhancing-user-experience-migrated-ba-com-50-website-pages-from-legacy-cms-to-adobe-experience-manager-featuring-data-integrity-zero-downtime-and-reduced-bounce-rate-by-30-implemented-promotional-updates-sale-banners-on-ba-com-securing-accurate-deployment-with-zero-uat-defects-and-enabling-seamless-rollout-of-revenue-generating-campaigns-team-leader-october-2023-july-2024-led-an-8-member-engineering-team-through-the-full-sdlc-for-british-airways-website-pages-driving-on-time-delivery-and-improving-service-quality-designed-sla-performance-dashboards-that-highlighted-incident-trends-cutting-average-resolution-time-by-15-and-strengthening-leadership-reporting-span3 {
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 12px;
+
+/* 3) Bullets for the first role */
+.frame-16 > div > span > span:nth-of-type(3){
+  font-size: clamp(13px, 1.4vw, 16px);
+  line-height: 1.6;
+  opacity: .96;
+  margin-bottom: 12px;
+}
+
+/* 4) Second role heading ("Team Leader October 2023 – July 2024") */
+.frame-16 > div > span > span:nth-of-type(4){
+  font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
+  margin: 18px 0 6px;
 }
-.frame-17 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 472px;
-  top: 939px;
+
+/* 5) Bullets for the second role */
+.frame-16 > div > span > span:nth-of-type(5){
+  font-size: clamp(13px, 1.4vw, 16px);
+  line-height: 1.6;
+  opacity: .96;
 }
-.rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
+
+/* -------- FOOTER -------- */
+.rudrakshi-moudgil-university-of-maryland-spring-2025{
+  margin-top: auto;                            /* sits at bottom */
+  text-align: center;
+  padding: 10px 16px 14px;
+  font-size: 14px;
+  color: #f0e6db;
+  opacity: .95;
+}
+
+/* -------- Small screens tweak -------- */
+@media (max-width: 768px){
+  .navbar{ padding-top: 16px; }
+  .navbar-brand{ font-size: 22px; }
+  .navbar-nav{ gap: 18px; }
+  .work-experience{ margin-top: 14vh; font-size: clamp(42px, 12vw, 62px); }
 }

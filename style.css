@@ -1,195 +1,126 @@
-.landing-page,
-.landing-page * {
-  box-sizing: border-box;
-}
+/* ================= Landing page (match Figma) ================= */
+
+/* Make the whole page a fixed viewport section (no scroll) */
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; }            /* prevent scrollbars */
+
 .landing-page {
-  background: #000000;
-  border-radius: 12px;
-  height: 1024px;
-  position: relative;
-  overflow: hidden;
-}
-.frame-1 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 138px;
-  top: 94px;
-}
-.rudrakshi-moudgil {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  position: relative;
-}
-.frame-2 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 934px;
-  top: 119px;
-}
-.homepage {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-}
-.frame-3 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 1073px;
-  top: 121px;
-}
-.about {
-  color: #ffffff;
-  text-align: left;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-}
-.frame-4 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 1175px;
-  top: 106px;
-}
-.contact-us {
-  color: #ffffff;
-  text-align: left;
-  position: relative;
-}
-.contact-us-span {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-}
-.contact-us-span2 {
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-}
-.frame-10 {
-  padding: 10px;
+  height: 100vh;                                  /* exactly one screen */
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
-  justify-content: center;
-  width: 317px;
-  position: absolute;
-  left: 561px;
-  top: 341px;
+  color: #f6efe6;                                 /* warm off-white */
+  font-family: "Georgia", "Times New Roman", Times, serif;
+
+  /* maroon background with vertical black stripes */
+  background:
+    repeating-linear-gradient(
+      to right,
+      #330707 0px,                                 /* maroon */
+      #330707 80px,                                /* maroon width */
+      #000000 80px,                                /* black stripe start */
+      #000000 105px                                /* black stripe width (~25px) */
+    );
 }
-.frame-5 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+
+/* ----- NAVBAR (transparent over the stripes) ----- */
+.main-menu { width: 100%; }
+.navbar.bg-dark { background: transparent !important; box-shadow: none; }
+.navbar { padding-top: 28px; padding-bottom: 0; }
+.navbar-brand {
+  font-size: clamp(22px, 2.6vw, 34px);
+  font-weight: 700;
+  color: #f6efe6 !important;
+  letter-spacing: 0.3px;
 }
+.navbar-nav { gap: 28px; }
+.navbar-nav .nav-link {
+  color: #e8dacd !important;
+  font-size: clamp(13px, 1.2vw, 16px);
+  letter-spacing: 0.2px;
+  padding: 0 !important;
+  opacity: 0.95;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active { opacity: 1; color: #ffffff !important; }
+
+/* ----- HERO (centered stack: title, diamond, subtitle, CTA) ----- */
+/* Use the remaining space between navbar (top) and footer (bottom) */
+.landing-page > .frame-10,
+.landing-page > .frame-6,
+.landing-page > .frame-8,
+.landing-page > .frame-7 {
+  align-self: center;                              /* horizontally center each */
+}
+
+/* Create vertical centering by giving the first hero item flexible space above */
+.landing-page > .frame-10 { margin-top: clamp(20px, 16vh, 180px); }
+
 .meet-me {
-  color: #ffffff;
   text-align: center;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 72px;
   font-weight: 700;
-  position: relative;
+  font-size: clamp(56px, 10vw, 110px);            /* big headline */
+  line-height: 1.05;
+  color: #f6efe6;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.45);
 }
-.frame-6 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 339px;
-  top: 583px;
-}
-.i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
-  color: #ffffff;
-  text-align: center;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  position: relative;
-}
+
+/* Little diamond icon under the title */
 .frame-8 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 227.05px;
+  display: block;
+  width: clamp(14px, 2vw, 22px);
   height: auto;
-  position: absolute;
-  left: 622px;
-  top: 760px;
-  overflow: visible;
+  margin: 12px auto 10px;
 }
-.frame-7 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 663px;
-  top: 768px;
+
+/* Subtitle line */
+.i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(16px, 2.2vw, 24px);
+  line-height: 1.5;
+  color: #f6efe6;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+  margin: 6px auto 20px;
+  max-width: 980px;
+  padding: 0 12px;
 }
+
+/* CTA button */
+.frame-7 { margin-top: clamp(8px, 5vh, 28px); }
 .get-started {
-  color: greenyellow;
-  text-align: center;
-  font-family: "TaiHeritagePro-Bold", sans-serif;
-  font-size: 24px;
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 14px;
+  background: #ffd400;                             /* bright yellow */
+  color: #000000;
   font-weight: 700;
-  position: relative;
-}
-.frame-9 {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 472px;
-  top: 939px;
-}
-.rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  color: #ffffff;
+  font-size: clamp(16px, 1.7vw, 20px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+  cursor: pointer;
   text-align: center;
-  font-family: "TaiHeritagePro-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
+}
+.get-started:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.get-started:active { transform: translateY(0); box-shadow: 0 4px 0 rgba(0,0,0,0.25); }
+
+/* ----- FOOTER (anchored at the very bottom) ----- */
+.frame-9 { width: 100%; margin-top: auto; }       /* pushes footer down */
+.rudrakshi-moudgil-university-of-maryland-spring-2025 {
+  text-align: center;
+  padding: 10px 16px 14px;
+  font-size: 14px;
+  color: #f0e6db;
+  opacity: 0.95;
+}
+
+/* ----- Small screens tune-up ----- */
+@media (max-width: 768px) {
+  .navbar { padding-top: 16px; }
+  .navbar-brand { font-size: 22px; }
+  .navbar-nav { gap: 18px; }
+  /* nudge headline a bit higher on short screens */
+  .landing-page > .frame-10 { margin-top: 12vh; }
+}
+.landing-page { 
+  background: #000 !important;   /* replaces the gradient */
 }

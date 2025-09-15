@@ -88,3 +88,6 @@ body { margin: 0; }
 
   .contact-us3 { margin-top: 14vh; }
 }
+.contact-us { 
+  background: #000 !important; 
+}
