@@ -193,87 +193,82 @@
   font-weight: 400;
   position: relative;
 }
-/* ===== Global layout fixes (append at end of each CSS file) ===== */
-
-/* Let pages grow naturally and center their content */
+/* ===== LAYOUT & FOOTER FIX ===== */
 .landing-page, .about, .contact-us {
   min-height: 100vh !important;
   height: auto !important;
   overflow: visible !important;
-  padding: 96px 16px 56px !important; /* room for navbar + footer */
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   gap: 16px !important;
+  padding: 96px 16px 32px !important; /* leaves room for navbar */
 }
 
-/* Keep navbar pinned and full-width */
-.main-menu { position: sticky; top: 0; width: 100%; z-index: 1030; }
-
-/* ---------- Home (index.html) ---------- */
-/* Center titles/buttons and let them flow */
-.let-s-impress-our-professor,
-.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
-.get-started,
+/* Footer sits at the bottom of the viewport/content */
 .rudrakshi-moudgil-university-of-maryland-spring-2025 {
   position: static !important;
-  margin: 12px auto !important;
+  width: 100% !important;
+  margin-top: auto !important;
   text-align: center !important;
-  max-width: 1000px !important;
-  padding: 0 8px !important;
+  padding: 8px 12px !important;
 }
-/* Hide decorative rectangle exported from Figma if it overlaps */
-.rectangle-1 { display: none !important; }
 
-/* ---------- About (about.html) ---------- */
-.work-experience {
+/* ===== HOMEPAGE HERO (index) ===== */
+.let-s-impress-our-professor,
+.i-have-worked-as-a-software-engineer-for-three-years-in-coforge,
+.get-started {
   position: static !important;
-  margin: 24px auto 8px !important;
   text-align: center !important;
+  margin: 8px auto !important;
   max-width: 1000px !important;
-  padding: 0 8px !important;
+  padding: 0 12px !important;
 }
-/* Target the long “coforge-…” block without copying the whole class name */
-[class^="coforge-"] {
+.rectangle-1 { display: none !important; } /* decorative box from Figma */
+
+/* ===== ABOUT PAGE TEXT (readable + centered) ===== */
+/* The plugin generated very long class names; catch them generically: */
+[class^="coforge-"], [class*=" coforge-"],
+[class^="-leader-"], [class*=" -leader-"],
+[class*="software-engineer"], [class*="team-"], [class*="british-airways"],
+[class*="resolution-time"], [class*="customer-satisfaction"] {
   position: static !important;
-  width: auto !important;
+  width: 100% !important;
   max-width: 1100px !important;
   margin: 8px auto !important;
   text-align: left !important;
+  font-size: 18px !important;
   line-height: 1.6 !important;
+  color: #ffffff !important;
+}
+
+.work-experience {
+  position: static !important;
+  margin: 16px auto 8px !important;
+  text-align: center !important;
+  max-width: 1000px !important;
   padding: 0 12px !important;
 }
 
-/* ---------- Contact (contact.html) ---------- */
-.contact-us3 {
+/* ===== CONTACT PAGE TEXT ===== */
+[class^="email-"], [class*=" email-"] {
   position: static !important;
-  text-align: center !important;
-  margin: 24px auto 8px !important;
-  max-width: 1000px !important;
-  padding: 0 8px !important;
-}
-[class^="email-"] {
-  position: static !important;
-  width: auto !important;
+  width: 100% !important;
   max-width: 900px !important;
   margin: 8px auto !important;
   text-align: center !important;
+  font-size: 20px !important;
   line-height: 1.6 !important;
-  padding: 0 12px !important;
+  color: #ffffff !important;
 }
 
-/* ---------- Footer (all pages) ---------- */
-.rudrakshi-moudgil-university-of-maryland-spring-2025 {
-  position: static !important;
-  margin: 24px auto 0 !important;
-  text-align: center !important;
-  padding: 0 8px !important;
-}
-
-/* ---------- Responsive tweaks ---------- */
+/* ===== RESPONSIVE SIZING ===== */
 @media (max-width: 768px) {
   .let-s-impress-our-professor,
   .work-experience,
   .contact-us3 { font-size: 40px !important; }
-  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge { font-size: 18px !important; }
+
+  .i-have-worked-as-a-software-engineer-for-three-years-in-coforge {
+    font-size: 18px !important;
+  }
 }
